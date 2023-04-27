@@ -1,3 +1,32 @@
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+.container li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.left { max-width: 30%; }
+.summary { text-align: justify; white-space: pre-line; }
 .heading2Xl {
   font-size: 2rem;
   line-height: 1.2;
@@ -23,6 +52,9 @@
 .headingMd {
   font-size: 14px;
   line-height: 1.5;
+}
+.headingMd p {
+  text-align: justify;
 }
 .headingMd .socialConnect {
   display: flex;
