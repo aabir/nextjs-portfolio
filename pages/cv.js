@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { getPortfolioStaticProps } from './api/staticProps';
+import React, { useState, useEffect } from 'react'
+import { getPortfolioStaticProps } from './api/staticProps'
 import Date from '../components/date'
-import styles from '../components/layout.module.css'
+import styles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout'
 
 const Cv = ({ portfolio }) => {

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
+// import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ export const siteTitle = 'Shible\'s home page on the internet'
 
 export default function Layout({ children, home, portfolio }) {
   return (
-    <div className={styles.container}>
+    <div className={utilStyles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Layout({ children, home, portfolio }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={utilStyles.header}>
         {home ? (
           <>
             <Image
@@ -60,7 +60,7 @@ export default function Layout({ children, home, portfolio }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className={utilStyles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
       )}
