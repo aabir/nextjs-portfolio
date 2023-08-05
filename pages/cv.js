@@ -6,6 +6,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Cv = ({ portfolio }) => {
 
@@ -15,9 +16,9 @@ const Cv = ({ portfolio }) => {
 
   return (
     <div className={styles.container}>
-      <head>
+      <Head>
         <title>Shible Noman's CV</title>
-      </head>
+      </Head>
       <h2>
         <Link href="/">SNA</Link>
       </h2>
@@ -30,10 +31,13 @@ const Cv = ({ portfolio }) => {
               width={75}
               alt={portfolio.basics.name}
         /> 
-        <div className='headerName'>{portfolio.basics.name}</div>
-        <div className='headerPosition'>{portfolio.basics.label}</div>
+        <div className='headerInfo'>
+          <div className='headerName'>{portfolio.basics.name}</div>
+          <div className='headerPosition'>{portfolio.basics.label}</div>
+        </div>
       </div>
-      <h4>Work Experience</h4>
+
+      <h4 className='headerExp'>Work Experience</h4>
         <ul>
           {portfolio.work.map((job, index) => (
             <li key={index}>

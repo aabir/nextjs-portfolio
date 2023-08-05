@@ -27,3 +27,12 @@ img {
   max-width: 100%;
   display: block;
 }
+.avater img {
+  float: left;
+}
+.headerInfo {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.headerExp { margin-top: 40px; }
