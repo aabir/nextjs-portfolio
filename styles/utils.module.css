@@ -3,13 +3,13 @@
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
-.container li {
+/* .container li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
-}
+} */
 .header {
   display: flex;
   flex-direction: column;
@@ -56,12 +56,29 @@
 .headingMd p {
   text-align: justify;
 }
-.headingMd .socialConnect {
+.headingMd {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
 }
+
+ul.socialConnect {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: nowrap; 
+  list-style: none; 
+  padding: 0; 
+  gap: 10px; 
+  width: 100%;
+}
+
+ul.socialConnect li {
+  display: inline-flex;
+  list-style: none;
+}
+
 
 .borderCircle {
   border-radius: 9999px;

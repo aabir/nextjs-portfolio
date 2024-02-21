@@ -33,9 +33,9 @@ export default function Home({ portfolio }) {
         <p>
           {portfolio.basics.summary}
         </p>
-        <ul className="socialConnect">
+        <ul className={utilStyles.socialConnect}>
           {portfolio.basics.profiles.map((profile, index) => {
-            if (index === 0) return null; // Assuming you want to skip the first profile for some reason
+            if (index === 0) return null;
             const icon = getIconForNetwork(profile.network);
             return (
               <li key={index}>
