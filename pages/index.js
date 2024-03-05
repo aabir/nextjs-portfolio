@@ -4,13 +4,10 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import { getPortfolioStaticProps } from './api/staticProps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Import brand icons from free-brands-svg-icons
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// Keep faGift from free-solid-svg-icons for non-brand icons
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home({ portfolio }) {
-
   function getIconForNetwork(network) {
     switch (network.toLowerCase()) {
       case "github":
@@ -33,14 +30,16 @@ export default function Home({ portfolio }) {
         <p>
           {portfolio.basics.summary}
         </p>
+
         <ul className={utilStyles.socialConnect}>
           {portfolio.basics.profiles.map((profile, index) => {
             if (index === 0) return null;
             const icon = getIconForNetwork(profile.network);
+            if (!icon) return null;
             return (
               <li key={index}>
                 <a href={profile.url} target="_blank" rel="noopener noreferrer">
-                  {icon && <FontAwesomeIcon icon={icon} />} <span className="sr-only">{profile.network}</span>
+                    <FontAwesomeIcon icon={icon} />
                 </a>
               </li>
             );
@@ -49,7 +48,6 @@ export default function Home({ portfolio }) {
       </section>
       <Link href="/cv"> CV </Link>
     </Layout>
-  )
+  );
 }
-
 export const getStaticProps = getPortfolioStaticProps;

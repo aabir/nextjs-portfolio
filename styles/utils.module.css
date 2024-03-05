@@ -64,19 +64,20 @@
 }
 
 ul.socialConnect {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: nowrap; 
-  list-style: none; 
-  padding: 0; 
-  gap: 10px; 
-  width: 100%;
+  display: block;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  width: 200px;
+  margin: 10px auto;
+  text-align: center;
 }
 
 ul.socialConnect li {
-  display: inline-flex;
+  display: inline-block;
   list-style: none;
+  width: 22px;
+  margin: 0 10px;
 }
 
 
