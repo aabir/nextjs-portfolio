@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { getPortfolioStaticProps } from './api/staticProps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGift } from '@fortawesome/free-solid-svg-icons';
+import { faGift, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../components/footer';
 
 export default function Home({ portfolio }) {
   function getIconForNetwork(network) {
@@ -44,6 +45,11 @@ export default function Home({ portfolio }) {
               </li>
             );
           })}
+          <li>
+            <a href="mailto: shblnmn@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </li>
         </ul>
       </section>
       <Link href="/cv"> CV </Link>

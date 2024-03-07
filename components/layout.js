@@ -3,6 +3,7 @@ import Image from 'next/image'
 // import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Footer from './footer'
 
 const name = 'Shible Noman'
 export const siteTitle = 'Shible\'s home page on the internet'
@@ -64,6 +65,7 @@ export default function Layout({ children, home, portfolio }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <Footer />
     </div>
   )
 }
