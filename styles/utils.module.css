@@ -2,6 +2,10 @@
   max-width: 50rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
+
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /* .container li {
     display: flex;
@@ -10,6 +14,7 @@
     flex-wrap: wrap;
     list-style: none;
 } */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -107,3 +112,20 @@ ul.socialConnect li {
   color: #666;
 }
 
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+} */
+.name, .menu {
+  float: left;
+}
+.name h1 {
+  font-weight: bold;
+}
+.link a {
+  margin-right: 15px;
+  padding: 10px;
+  text-decoration: none; 
+}

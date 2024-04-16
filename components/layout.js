@@ -4,6 +4,7 @@ import Image from 'next/image'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Footer from './footer'
+import Header from './header'
 
 const name = 'Shible Noman'
 export const siteTitle = 'Shible\'s home page on the internet'
@@ -11,6 +12,7 @@ export const siteTitle = 'Shible\'s home page on the internet'
 export default function Layout({ children, home, portfolio }) {
   return (
     <div className={utilStyles.container}>
+      <Header />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

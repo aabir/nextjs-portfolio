@@ -10,7 +10,6 @@ const Footer = () => (
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #f8f9fa;
             }
             p {
                 margin: 0;
