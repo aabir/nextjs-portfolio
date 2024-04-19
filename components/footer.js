@@ -5,11 +5,11 @@ const Footer = () => (
         <p>Built using Next.js and with gitconnected.com API </p>
         <style jsx>{`
             footer {
-                width: 100%;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                margin-top: 0; /* take available whitespace */
+                margin-bottom: -10px;      /* remove bottom whitespace */
+                padding-bottom: 5px;
+                height: 100px; 
+                margin: 0 auto;
             }
             p {
                 margin: 0;

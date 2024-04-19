@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 import { getPortfolioStaticProps } from './api/staticProps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -51,7 +50,6 @@ export default function Home({ portfolio }) {
           </li>
         </ul>
       </section>
-      <Link href="/cv"> CV </Link>
     </Layout>
   );
 }
