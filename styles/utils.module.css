@@ -9,7 +9,7 @@
 .container {
   max-width: 50rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 1rem auto 6rem;
   display: flex;
   flex-direction: column;
   /* min-height: 100vh; */
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .backToHome {
@@ -30,8 +31,8 @@
   padding: 10px;
   box-sizing: border-box;
 }
-.left { max-width: 50%; }
-.summary { text-align: justify; white-space: pre-line; }
+/* .left { max-width: 50%; } */
+.summary { text-align: left; white-space: pre-line; line-height: 2; }
 .heading2Xl {
   font-size: 2rem;
   line-height: 1.2;
@@ -55,7 +56,7 @@
 }
 
 .headingMd {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 .headingMd p {
@@ -130,4 +131,7 @@ ul.socialConnect li {
   margin-right: 15px;
   padding: 10px;
   text-decoration: none; 
+}
+.timeline {
+  margin-left: 10%;
 }
