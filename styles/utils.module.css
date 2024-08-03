@@ -135,3 +135,11 @@ ul.socialConnect li {
 .timeline {
   margin-left: 10%;
 }
+.blogTitle a {
+  color: #b2bac2;
+}
+.blogDate {
+  float: right; 
+  font-size: 14px;
+  color: #b2bac2;
+}

@@ -5,6 +5,7 @@ import { getPortfolioStaticProps } from './api/staticProps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGift, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Blog from '../components/blog';
 
 export default function Home({ portfolio }) {
   function getIconForNetwork(network) {
@@ -50,6 +51,7 @@ export default function Home({ portfolio }) {
           </li>
         </ul>
       </section>
+      <Blog />
     </Layout>
   );
 }

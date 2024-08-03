@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
     <footer>
-        <p>Built using Next.js and with <a href='https://gitconnected.com/aabir' target='_blank'>gitconnected.com</a> API </p>
+        <p>Built using Next.js and with <a href='https://gitconnected.com/aabir' target='_blank'>gitconnected.com</a> API.</p>
         <style jsx>{`
             footer {
                 position: absolute;
