@@ -21,8 +21,8 @@ const Cv = ({ portfolio }) => {
         <Head>
           <title>Shible Noman's CV</title>
         </Head>
-        <h2>
-          <Link href="/">SNA</Link>
+        <h2 className={utilStyles.blogTitle}>
+          <Link href="/">←SNA</Link>
         </h2>
         <div className='avater'>
           <Image
@@ -34,8 +34,8 @@ const Cv = ({ portfolio }) => {
                 alt={portfolio.basics.name}
           /> 
           <div className='headerInfo'>
-            <div className='headerName'>{portfolio.basics.name}</div>
-            <div className='headerPosition'>{portfolio.basics.label}</div>
+            <div className={utilStyles.headerName}>{portfolio.basics.name}</div>
+            <div className={utilStyles.headerPosition}>{portfolio.basics.label}</div>
           </div>
         </div>
 

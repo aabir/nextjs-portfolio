@@ -143,3 +143,7 @@ ul.socialConnect li {
   font-size: 14px;
   color: #b2bac2;
 }
+.headerName, .headerPosition {
+  font-weight: bold;
+  font-size: 14px;
+}

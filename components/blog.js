@@ -16,11 +16,11 @@ const Blog = () => {
 
   return (
     <section>
-      <h2>Tech Notes</h2>
+      <h2>Learning Notes</h2>
       <hr />
       {posts.map((post) => (
         <h3 key={post.id} className={utilStyles.blogTitle}>
-          <a href={post.link}>{post.title.rendered}</a>
+          <a href={post.link} target='_blank'>{post.title.rendered}</a>
           <span className={utilStyles.blogDate}>
               {new Date(post.date).toLocaleString('en-GB', {
                 day: 'numeric',
@@ -30,6 +30,10 @@ const Blog = () => {
             </span>
         </h3>
       ))}
+
+      <div style={{textAlign: 'center', color: '#b2bac2'}}>
+        <a href='https://shiblenoman.com/blog/' target='_blank'>More posts</a>
+      </div>
     </section>
   );
 };

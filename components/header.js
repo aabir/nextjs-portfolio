@@ -16,6 +16,9 @@ const Header = () => (
             {/* <Link href="/uses">
                 Uses
             </Link> */}
+            <Link href="https://shiblenoman.com/blog/" target='_blank'>
+                Notes
+            </Link>
         </div>
     </div>
 );
