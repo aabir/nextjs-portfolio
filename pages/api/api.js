@@ -4,7 +4,7 @@ export async function fetchPortfolio() {
   return portfolio;
 }
 
-const apiEndpoint = 'http://shiblenoman.com/blog/wp-json/wp/v2';
+const apiEndpoint = 'https://aabirtech.com/shiblenomanblog/wp-json/wp/v2';
 
 const getPosts = async () => {
   const response = await fetch(`${apiEndpoint}/posts?per_page=10`);
