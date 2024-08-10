@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import utilStyles from '../styles/utils.module.css'
+import { BLOG_URL } from './Constants';
 
 const Header = () => (
     <div className={utilStyles.topHeader}>
@@ -16,7 +17,7 @@ const Header = () => (
             {/* <Link href="/uses">
                 Uses
             </Link> */}
-            <Link href="https://shiblenoman.com/blog/" target='_blank'>
+            <Link href={BLOG_URL} target='_blank'>
                 Notes
             </Link>
         </div>
